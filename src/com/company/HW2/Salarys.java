@@ -5,7 +5,7 @@ package com.company.HW2;
  */
 public class Salarys {
     public static void main(String[] args) {
-        String text = "Ваcилиса Егоровна заранботала 508800 рублей, Петя - 7563 рубля, а Cтас Пьеха - 3008800 рублей !!";
+        String text = "Ваcилиса Егоровна заранботала 508800 рублей, Петя - 7563 рубля, а Cтас Пьеха - 3008800 рублей !!!!";
         text = text.trim();
         System.out.println(text);
         int firstValuta = text.indexOf(" рубл");//почему здесь пробел, потому что есть имена Рубен а может быть тогда и часть слова

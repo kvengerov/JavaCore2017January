@@ -1,16 +1,14 @@
-package com.company.HW2;
+package com.company.HW2.TextAnalizers;
 
-import sun.plugin.javascript.navig.Array;
-
-import java.util.Arrays;
-import java.util.Scanner;
-import java.util.StringTokenizer;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 /**
- * Created by Stas on 29.01.2017.
+ * Created by Stas on 30.01.2017.
  */
-public class CountWordsInText {
-    public static void main(String[] args) {
+public class Loader {
+    public static void main(String[] args) throws IOException {
         String text = "My name is Dima. I am a student of the second year  of study. I study at the university. " +
                 "My hobby is music. When I have free time I usually go to the biggest music shop in my town and buy " +
                 "CDs with my favourite music. I have a big collection of CDs at home, but I can not resist the temptation " +
@@ -25,26 +23,14 @@ public class CountWordsInText {
                 "I often go shopping with my mother. She buys healthy food for our family fruits and vegetables," +
                 " fish, honey, cheese and turkey. As for me, I buy what I most of all: biscuits, candied fruit jelly, " +
                 "shrimps and sweets. I buy them not only for myself but also for the whole family. " +
-                "That's what I like shopping? for!  I, can buy things that I like and it raises my mood. 12 is a number email@mail.ru drag-and-drop";
+                "That's what I like shopping? for! I, can buy things that I like and it raises my mood. 12 is a number email@mail.ru drag-and-drop";
 
-        //String[] textArr = new Scanner(System.in).nextLine().split(" ");
-        String[] textArr = text.split("\\s+");
-        System.out.println(Arrays.toString(textArr));
-        System.out.println(textArr.length);
-        //String szDelemiters = "\"(),+-=<>?!@#$%^&*~'./\\";
-        StringTokenizer st = new StringTokenizer(text);
-        int countWords = st.countTokens();
-        int counter = 0;
-        while (st.hasMoreTokens()) {
-            if (counter % 6 == 0)
-                System.out.println();
-            else
-                System.out.print(st.nextToken() + "    ");
-            counter++;
-        }
-        System.out.println("\n" + countWords);
+        //Reading file to the String
+        String text1 = new String(Files.readAllBytes(Paths.get("res/text_01.txt")));
+
+        TextAnalyzer analyzer = new TextAnalyzer(text1);
+        System.out.println("Most frequent word: " + analyzer.getMostFrequentWord());
 
 
     }
-
 }

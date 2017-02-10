@@ -7,6 +7,7 @@ import java.util.Scanner;
  */
 public class BoxesToMars {
     public static void main(String[] args) {
+        System.out.println("Введите количество ящиков с провизией отправляемых на марс!");
         Scanner in = new Scanner(System.in);
         int countBoxes = in.nextInt();
         int boxesInContainer = 34;
@@ -29,9 +30,6 @@ public class BoxesToMars {
         System.out.println("Всего контейнеров:" + containerCount);
 
     }
-
-
-
 
    
 }
