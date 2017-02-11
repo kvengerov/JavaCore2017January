@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import static java.lang.System.exit;
 
 public class Garage {
-    public static void main(String[] args) throws IOException, InterruptedException {
+    public static void main(String[] args) throws IOException{
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         ArrayList<String> cars = new ArrayList<>();
         for (;;){
@@ -22,17 +22,14 @@ public class Garage {
 
                 System.out.println("Введите exit для выезда одной машины из гаража. \nВведите exitall для выезда всех машин из гаража. \nВведите close для закрытия программы");
                 String clearCar = reader.readLine();
-                switch (clearCar){
+                String clearCarLowerCase = clearCar.toLowerCase();
+                switch (clearCarLowerCase){
                     case "exit":
-                    case "Exit":
                         String nameCar = cars.remove(cars.size()-1);
                         System.out.println("Машина " + nameCar + " выехала.");
                         System.out.println(cars);
                         break;
                     case "exitall":
-                    case "exitAll":
-                    case "ExitAll":
-                    case "Exitall":
                         for (int i = -4; i < cars.size(); i++) {
                             String nameAllCar = cars.remove(cars.size()-1);
                             System.out.println("Машина " + nameAllCar + " выехала.");
@@ -41,7 +38,6 @@ public class Garage {
                         System.out.println("Гараж пуст. Все места свободны.");
                         break;
                     case "close":
-                    case "Close":
                         System.out.println("Завершение программы.");
                         exit(0);
                         break;
