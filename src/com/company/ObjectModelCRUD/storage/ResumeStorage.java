@@ -12,7 +12,7 @@ public class ResumeStorage extends AbstractResumeStorage {
         int index = getIndex(r.getUuid());
         if (index >= 0) {
             System.out.println("Sorry, i can't save! Resume " + r.getUuid() + " already exist!");
-        } else if (isFull()) {
+        } else if (isOverflow()) {
             System.out.println("Sorry, i can't save new resume. storage is full!");
         } else {
             storage[size++] = r;

@@ -1,14 +1,13 @@
 package com.company.ObjectModelCRUD;
 
 import com.company.ObjectModelCRUD.model.Resume;
-import com.company.ObjectModelCRUD.storage.ResumeStorage;
-import com.company.ObjectModelCRUD.storage.SortedResumeStorage;
-import com.company.ObjectModelCRUD.storage.Storage;
+import com.company.ObjectModelCRUD.storage.*;
+
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.List;
+
 
 /**
  * Created by Stas on 12.02.2017.
@@ -16,6 +15,7 @@ import java.util.List;
 public class Loader {
     //private final static Storage ARRAY_STORAGE = new ResumeStorage();
     private final static Storage ARRAY_STORAGE = new SortedResumeStorage();
+    //private final static Storage ARRAY_STORAGE = new SortedByHandsStorage();
 
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));

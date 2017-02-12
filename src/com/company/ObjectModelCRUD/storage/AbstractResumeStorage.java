@@ -37,12 +37,13 @@ public abstract class AbstractResumeStorage implements Storage{
 
 
 
-    protected  boolean isFull(){
+    protected  boolean isOverflow(){
         if(size >= (STORAGE_LIMIT-1))
             return true;
         else
             return false;
     }
+
 
     @Override
     public void clear(){
