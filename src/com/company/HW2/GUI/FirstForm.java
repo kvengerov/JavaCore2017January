@@ -4,30 +4,24 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-
 /**
- * Created by Stas on 30.01.2017.
+ * Created by Stas on 12.02.2017.
  */
-public class RundomNumber {
+public class FirstForm {
     private JPanel rootPanel;
-    private JButton rundomNumb;
+    private JButton GetRandom;
     private JTextField number;
 
-
-
-    public RundomNumber() {
-        rundomNumb.addActionListener(new ActionListener() {
+    public FirstForm() {
+        GetRandom.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                number.setText(String.valueOf(Math.round(100*Math.random())));
+                number.setText(String.valueOf(100 * Math.random()));
             }
         });
     }
+
     public JPanel getRootPanel() {
         return rootPanel;
     }
-
-
-
-
 }

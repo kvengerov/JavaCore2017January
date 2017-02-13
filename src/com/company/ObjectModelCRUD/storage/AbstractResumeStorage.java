@@ -15,12 +15,8 @@ public abstract class AbstractResumeStorage implements Storage{
         return size;
     }
 
-
-
-
     @Override
     public void delete(String uuid) {
-
     }
 
     @Override
@@ -35,15 +31,12 @@ public abstract class AbstractResumeStorage implements Storage{
 
     protected abstract int getIndex(String uuid);
 
-
-
     protected  boolean isOverflow(){
         if(size >= (STORAGE_LIMIT-1))
             return true;
         else
             return false;
     }
-
 
     @Override
     public void clear(){

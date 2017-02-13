@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.company.ObjectModelCRUD.GUI.EditResume">
+  <grid id="27dc6" binding="rootPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+    <constraints>
+      <xy x="1" y="13" width="733" height="571"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="c8410" class="javax.swing.JList" binding="resumeList">
+        <constraints/>
+        <properties>
+          <preferredSize width="400" height="400"/>
+        </properties>
+      </component>
+      <component id="3b690" class="javax.swing.JButton" binding="save">
+        <constraints/>
+        <properties>
+          <text value="save"/>
+        </properties>
+      </component>
+      <component id="f28cf" class="javax.swing.JButton" binding="delete">
+        <constraints/>
+        <properties>
+          <text value="delete"/>
+        </properties>
+      </component>
+      <component id="7de4b" class="javax.swing.JButton" binding="edit">
+        <constraints/>
+        <properties>
+          <text value="edit"/>
+        </properties>
+      </component>
+      <component id="5389f" class="javax.swing.JTextField" binding="uuid">
+        <constraints/>
+        <properties>
+          <minimumSize width="50" height="24"/>
+          <preferredSize width="50" height="24"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

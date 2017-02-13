@@ -5,7 +5,7 @@ import com.company.ObjectModelCRUD.model.Resume;
 /**
  * Created by Stas on 12.02.2017.
  */
-public class SortedByHandsStorage extends AbstractResumeStorage {
+public class SortedManualStorage extends AbstractResumeStorage {
 
     @Override
     public int getIndex(String uuid) {

@@ -31,6 +31,8 @@ public class Loader {
         TextAnalyzer analyzer = new TextAnalyzer(text1);
         System.out.println("Most frequent word: " + analyzer.getMostFrequentWord());
 
+        analyzer.showStatistic();
+
 
     }
 }

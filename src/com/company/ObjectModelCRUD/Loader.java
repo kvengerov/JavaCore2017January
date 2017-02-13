@@ -14,8 +14,8 @@ import java.io.InputStreamReader;
  */
 public class Loader {
     //private final static Storage ARRAY_STORAGE = new ResumeStorage();
-    private final static Storage ARRAY_STORAGE = new SortedResumeStorage();
-    //private final static Storage ARRAY_STORAGE = new SortedByHandsStorage();
+    //private final static Storage ARRAY_STORAGE = new SortedResumeStorage();
+    private final static Storage ARRAY_STORAGE = new SortedManualStorage();
 
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
