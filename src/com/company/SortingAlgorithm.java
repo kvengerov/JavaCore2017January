@@ -15,15 +15,18 @@ public class SortingAlgorithm {
 
     public static void main(String[] args) {
         //camel стиль
+//        int i = 10;
+//        Integer ii = new Integer(i); //Boxing
+
         int[] unsortedArray = getRandomArray(ARRAY_LENTH);
 
-        //int[] unsortedArray1 = unsortedArray; - пример неправильной инициализации
+        //int[] unsortedArray1 = unsortedArray; //- пример неправильной инициализации
         int[] unsortedArray1 = Arrays.copyOf(unsortedArray, unsortedArray.length);
         int[] unsortedArray2 = Arrays.copyOf(unsortedArray, unsortedArray.length);
         int[] unsortedArray3 = Arrays.copyOf(unsortedArray, unsortedArray.length);
 
-        //System.out.println(System.currentTimeMillis());
-        //System.out.println(System.currentTimeMillis()/(1000L*60L*60L*24L*365L)); // UNIX TIME    current TIME   ---- timeStamp
+        System.out.println(System.currentTimeMillis());
+        System.out.println(System.currentTimeMillis()/(1000L*60L*60L*24L*365L)); // UNIX TIME    current TIME   ---- timeStamp
         long timeout = System.currentTimeMillis();
 
         //printArray(unsortedArray);
@@ -61,6 +64,7 @@ public class SortingAlgorithm {
 
         System.out.println("---Util sort---");
         Collections.sort(listSorted);
+
 
         System.out.println(System.currentTimeMillis() - timeout + " Millis");
         timeout = System.currentTimeMillis();
@@ -137,7 +141,7 @@ public class SortingAlgorithm {
         return arr;
     }
 
-    //static void qSort(int[] А, int first, int last) {   - типичные ошибки наименования, пример опыта
+    //static void qSort(int[] А, int low, int high) {   - типичные ошибки наименования, пример опыта
     static void qSort(int[] arr, int first, int last) {
         int i = first;
         int j = last;

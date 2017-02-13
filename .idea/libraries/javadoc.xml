@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="javadoc">
+    <CLASSES />
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/quaqua-9.1.nested/quaqua-9.1.zip!/Quaqua/dist/javadoc" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/quaqua-9.1.nested/quaqua-9.1.zip!/Quaqua/src" />
+    </SOURCES>
+  </library>
+</component>

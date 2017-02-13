@@ -9,7 +9,6 @@ public class Lesson1TypesOfData {
         int age = 18;
         String name = "Коле";
         double height = 1.8;
-
         System.out.println(name +" уже "+age+" лет, он ростом "+height +" метра.");
     }
 
